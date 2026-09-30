@@ -3,44 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <title>ShipBridge Company</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      
+    />
+    <link rel="stylesheet" href="css/home.css">
   </head>
   <body>
     <header>
-      <h1>ShipBridge</h1><br>
       <nav>
-        <a href="#Home">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="#Services">Services</a>
+        <div class="logo">
+          <h1>ShipBridge</h1>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="#contact">Contact</a>
+          <a href="order.html">Services</a>
+        </div>
       </nav>
-    </header><br>
-    <strong>
-      From finding the right product to coordinating shipping and delivery, our
-      goal is to simplify the entire shopping experience.</strong
-    >
-    <main>
-      <img src="image 1.jpg" alt="Pic 1" width="500" />
-      <img src="image 2.jpg" alt="Pic 2" width="300" />
-      <img src="image 3.jpg" alt="Pic 3" width="400" />
+    </header>
 
-      <table border="1">
-        <thead>
-          <tr>
-            <th colspan="3" style="text-align: center">ShipBridge Services</th>
-          </tr>
-          <tr>
-            <th>Air Shipping</th>
-            <th>Ocean Shipping</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>$15/kg</td>
-            <td>$25/kg</td>
-          </tr>
-        </tbody>
-      </table>
+    <main>
       <!-- Hero Section -->
       <section class="hero">
         <div class="hero-content">
@@ -49,29 +35,64 @@
             Discover products from international stores and have them delivered
             to Kenya
           </p>
-          <a href="#contact" class="hero-button">Get Started</a>
+          <br />
+          <p>
+            From finding the right product to coordinating shipping and
+            delivery, our goal is to simplify the entire shopping experience.
+          </p>
+        </div>
+        <div class="hero-button">
+          <a href="login.html">Get Started</a>
         </div>
       </section>
-      <!-- COURIER SECTION -->
-      <p>
-        <strong
-          >Here are some of our freight couriers you can choose from</strong
-        >
-      </p>
+      <!-- images -->
       <section>
-        <select id="Couriers" name="Couriers">
+        <div class="hero-image">
+          <img src="images/image 1.jpg" alt="Pic 1" width="500" />
+          <img src="images/image 2.jpg" alt="Pic 2" width="300" />
+         
+        </div>
+      </section>
+
+      <!-- table -->
+      <section class="hero-table">
+        <table border="1">
+          <thead>
+            <tr>
+              <th colspan="2" style="text-align: center">
+                ShipBridge Services
+              </th>
+            </tr>
+            <tr>
+              <th>Air Shipping</th>
+              <th>Ocean Shipping</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$15/kg</td>
+              <td>$25/kg</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- COURIER SECTION -->
+      <section class="hero-couriers">
+        <div>
+          <p>Here are some of our freight couriers you can choose from.</p>
+        </div>
+        <select name="Couriers">
           <optgroup label="international">
             <option value="FEDEX">FEDEX</option>
             <option value="DHL">DHL</option>
-            <option value="USSP Shipping">USSP Shipping</option>
+            <option value="USPS Shipping">USSP Shipping</option>
           </optgroup>
         </select>
+
         <select>
           <optgroup label="Local">
             <option value="G4S">G4S</option>
-            <br />
-            <option value="WelsFargo">WelsFargo</option>
-            <br />
+            <option value="Wells Fargo">Wells Fargo</option>
             <option value="Jumia">Jumia</option>
           </optgroup>
         </select>
@@ -79,31 +100,7 @@
       <br />
       <br />
       <br />
-      <!-- SUBMIT FORM -->
-      <strong>Enter you Product details and submit to get quote</strong
-      ><br /><br />
-      <section>
-        <form>
-          <label for="product link">Product Link</label>
-          <input
-            type="text"
-            id="Product Link"
-            name="Product Link"
-            placeholder="Product Link"
-          /><br />
-          <label for="Quantity">Quantity</label>
-          <input
-            type="text"
-            id="Quantity"
-            name="Quantity"
-            placeholder="Quantity"
-          /><br />
-          <label for="Weight">Weight</label>
-          <input type="text" id="Weight" name="Weight" placeholder="1kg" />
-        </form>
-        <br />
-        <button type="submit">submit</button>
-      </section>
+
       <!-- ARTICLE SECTION -->
       <section>
         <article>
@@ -123,33 +120,63 @@
           </p>
 
           <br />
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id=" feedback"
-              name="feedback"
-              row="10"
-              maxlength="500"
-              placeholder="Write you feedback here..."
-            ></textarea>
-          </div>
-          <br />
-          <button type="submit">Send message</button>
+          <form action="" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="feedback">Message</label>
+              <textarea
+                id=" feedback"
+                name="feedback"
+                rows="5"
+                maxlength="500"
+                placeholder="Write your feedback here..."
+              ></textarea>
+            </div>
+            <br />
+            <div>
+              <button type="submit">Submit Feedback</button>
+            </div>
+          </form>
         </article>
       </section>
-      <br /><br />
-      <!-- SOCIAL LINKS WITH COPYRIGHT -->
-      <footer>
-        <section>
-          <div class="social-links">
-            <a href="#" aria-label="ShipBridge Facebook">Facebook</a>
-            <a href="#" aria-label="ShipBridge Instagram">Instagram</a>
-          </div>
-        </section>
-        <p>&copy;2026 KIBZ CAFE. All rights reserved.</p>
-        <p>Contact: 0712 345 678</p>
-      </footer>
     </main>
+    <!-- SOCIAL LINKS WITH COPYRIGHT -->
+    <section>
+      <footer>
+        <div class="social-links">
+          <a href="" aria-label="ShipBridge Facebook"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="" aria-label="ShipBridge Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </footer>
+      <div id="contact">
+        <p>&copy;2026 ShipBridge. All rights reserved.</p>
+        <p>Contact: 0712 345 678</p>
+      </div>
+    </section>
   </body>
 </html>
