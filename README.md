@@ -75,6 +75,29 @@ Option 2: Use live Server
 ```https://macklenton.github.io/Shipbridge_project1/```
 
 
+## SHIPBRIDGE WOKFLOW
+
+```
+ShipBridge/
+│
+├── index.html
+├── login.html
+├── order.html
+│
+├── css/
+│   ├── home.css
+│   ├── login.css
+│   └── order.css
+│
+├── images/
+│   ├── Shipping.png
+│   └── Truck.jpg
+│
+└── README.md
+```
+
+
+
 ## AUTHOR:
 
 Macklenton
