@@ -67,12 +67,12 @@ The main goals of the ShipBridge website are to:
 Option 1: Open directly
 
 Download or clone the repository and open:
-`https://github.com/macklenton/Shipbridge_project1.git`
+```https://github.com/macklenton/Shipbridge_project1.git```
 
 index.html  in a web browser.
 
 Option 2: Use live Server
-``
+```https://macklenton.github.io/Shipbridge_project1/```
 
 
 ## AUTHOR:
