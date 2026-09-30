@@ -143,6 +143,41 @@ body > header h1 {
 }
 
 
+/* =========================
+   BACK TO HOME BUTTON
+========================= */
+
+.home-link {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.home-link a {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: #0b3d91;
+    color: white;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.home-link a:hover {
+    background-color: purple;
+    color: white;
+}
+
+.home-link a:focus-visible {
+    outline: 3px solid #ff9800;
+    outline-offset: 3px;
+}
 
 /* =========================
    DESKTOP
