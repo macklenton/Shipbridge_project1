@@ -1,0 +1,76 @@
+/* navigation bar*/
+header{
+    background-color: white;
+    padding: 20px;
+    border-bottom: 1px solid #f3f0f0;
+
+}
+nav{
+    max-width: 1200px;
+    margin: o auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo h1{
+    margin: 0;
+    color: rgb(19, 22, 21);
+    font-size: 28px;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+.nav-links a{
+    color: #222;
+    font-weight: 600;
+    transition: 0.3s;
+
+}
+.nav-links a:hover{
+    color: rgb(95, 95, 173);
+    
+
+}
+/* HERO SECTION*/
+.hero{
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 550px;
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to left, rgb(160, 217, 236), blue, white);
+    color: black;
+}
+.hero-content{
+    max-width: 750px;
+
+}
+.hero-content h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin: 0 0 20px;
+}
+.hero-content p {
+    font-size: 18px;
+    margin: 7px 0;
+}
+.hero-button{
+    margin-top: 35px;
+
+}
+.hero-button a{
+    display: inline-block;
+    color: white;
+    background-color: purple;
+    border-radius: 25px;
+    padding: 14px 20px;
+    font-weight: bold;
+    font-size: medium;
+    transition: 0.3;
+}

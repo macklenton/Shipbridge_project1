@@ -174,10 +174,7 @@ body > header h1 {
     color: white;
 }
 
-.home-link a:focus-visible {
-    outline: 3px solid #ff9800;
-    outline-offset: 3px;
-}
+
 
 /* =========================
    DESKTOP
