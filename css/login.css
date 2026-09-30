@@ -26,7 +26,66 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: center;
 
     padding: 20px;
 }
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+main {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+/* =========================
+   LOGIN HEADER
+========================= */
+
+.main {
+    text-align: center;
+    color: white;
+
+    margin-bottom: 25px;
+}
+
+.main h1 {
+    margin: 0 0 8px;
+
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.main h2 {
+    margin: 0;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    opacity: 0.9;
+}
+
+
+/* =========================
+   SMALL HEADING
+========================= */
+
+.small-heading {
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+.small-heading p {
+    margin: 0;
+}
+
+.small-heading strong {
+    font-size: 25px;
+}
+
